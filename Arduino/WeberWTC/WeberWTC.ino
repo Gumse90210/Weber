@@ -59,8 +59,8 @@ enum {
 LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the LCD I2C address
 
 //wifi stuff
-char ssid[25];   // = "WireLessLAN";    // your network SSID (name) 
-char key[15];    // = "6d617a6461";      // your network key
+char ssid[25];  // your network SSID (name) 
+char key[15];   // your network key
 char probe_type = ET732_PROBES;
 
 char wifi_enabled = false;
@@ -72,7 +72,6 @@ int status = WL_IDLE_STATUS;    // the Wifi radio's status
 WiFiClient client;
 
 //ip stuff
-//char server[] = "www.dreamfabric.dk";
 const IPAddress server(195, 128, 174, 119);
 
 // the IP address for the shield:
